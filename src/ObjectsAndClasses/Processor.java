@@ -75,6 +75,9 @@ public class Processor {
                     System.out.println("Lua chon khong hop le ! .Vui long chon lai.");
                     break;
             }
+            if(choice==6){
+                break;
+            }
         }
     }
 }
