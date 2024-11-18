@@ -72,6 +72,7 @@ public class Processor {
 
                 default:
                     System.out.println("Lua chon khong hop le ! .Vui long chon lai.");
+                    break;
             }
         }while(choice != 6);
     }
