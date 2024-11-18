@@ -8,7 +8,7 @@ public class Processor {
         StudentList studentList = new StudentList();
         Scanner s = new Scanner(System.in);
 
-        while (true) {
+        
             System.out.println("\n--- MENU ---");
             System.out.println("1. Nhap so thong tin cua n sinh vien: ");
             System.out.println("2. Hien thi tat ca thong tin sinh vien ");
@@ -19,7 +19,7 @@ public class Processor {
             System.out.print("Nhap chuc nang ban muon chon:  ");
             int choice = s.nextInt();
             s.nextLine();
-
+             do{
             switch (choice) {
                 case 1:
                     System.out.println();
@@ -68,11 +68,11 @@ public class Processor {
                 case 6:
                     System.out.println();
                     System.out.println("Thoat chuong trinh.");
-                    return;
+                  break;
 
                 default:
                     System.out.println("Lua chon khong hop le ! .Vui long chon lai.");
             }
-        }
+        }while(choice != 6);
     }
 }
